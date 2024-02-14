@@ -83,7 +83,7 @@ Code available: ``opennmt/train_HF_onmt.py``
 Following the official implementation I run the training using OpenNMT trainer and transformer model.
 
 ```angular2html
-python opennmt/train.py --bert_kd --bert_dump /athena/rameaulab/store/mdo4009/KD_dataset/dump/de-en/targets/BERT-deen --data_db /athena/rameaulab/store/mdo4009/KD_dataset/dump/de-en/DEEN.db -data /athena/rameaulab/store/mdo4009/KD_dataset/dump/de-en/DEEN -config opennmt/config/config-transformer-base-mt-deen.yml \  
+python opennmt/train.py --bert_kd --bert_dump KD_dataset/dump/de-en/targets/BERT-deen --data_db KD_dataset/dump/de-en/DEEN.db -data KD_dataset/dump/de-en/DEEN -config opennmt/config/config-transformer-base-mt-deen.yml \  
     -learning_rate 2.0 -warmup_steps 8000  --kd_alpha 0.5  \
     --kd_temperature 10.0 --kd_topk 8 --train_steps 100000 -save_model output/kd-onmt
 ```
